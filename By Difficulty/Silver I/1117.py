@@ -1,0 +1,7 @@
+W, H, f, c, x1, y1, x2, y2 = map(int,input().split())
+# Width  0 to min(f,W-f) (double)  and  max(f,W-f) (single)
+# Height 0 to H//(c+1) (c+1 times)
+whites = (x2-x1)*2-max(0, x2-max(min(f,W-f),x1))
+whites *= (y2-y1)
+whites *= (c+1)
+print(W*H-whites)
