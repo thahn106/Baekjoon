@@ -1,0 +1,6 @@
+hi = int(input())
+mi = int(input())
+lo = int(input())
+co = int(input())
+sp = int(input())
+print(min(hi,mi,lo)+min(co,sp)-50)
