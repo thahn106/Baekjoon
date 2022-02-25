@@ -1,0 +1,7 @@
+A,B = input().split()
+A = list(A)
+x = int("".join([str(int(i) -(i=='6')) for i in A]))
+y = int("".join([str(int(i) -(i=='6')) for i in B]))
+X = int("".join([str(int(i) +(i=='5')) for i in A]))
+Y = int("".join([str(int(i) +(i=='5')) for i in B]))
+print(x+y,X+Y)
