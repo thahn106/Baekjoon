@@ -1,11 +1,11 @@
+from math import sqrt
+
 def v(c):
     if ord(c)>96:
         return ord(c)-96
     else:
-        return ord(c)-64
+        return ord(c)-64+26
 
-
-from math import sqrt
 MAXP = 10000
 primes = [2,3,5,7,11,13,17,19]
 for n in range(21, MAXP,2):
@@ -18,7 +18,6 @@ for n in range(21, MAXP,2):
             break
     if prime:
         primes.append(n)
-
 primes.append(1)
 
 s = input()
