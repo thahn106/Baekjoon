@@ -6,9 +6,9 @@ def v(c):
     else:
         return ord(c)-64+26
 
-MAXP = 10000
+MAXP = 10001
 primes = [2,3,5,7,11,13,17,19]
-for n in range(21, MAXP,2):
+for n in range(21, MAXP+1,2):
     prime = True
     for p in primes:
         if p > sqrt(n):
